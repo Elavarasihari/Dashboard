@@ -1,0 +1,58 @@
+.contentWidth {
+  margin-left: 16rem;
+  width: calc(100% - 16rem);
+}
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
+.customInput {
+  outline: 2px solid #d6d3d1;
+  border-radius: 5px;
+  height: 35px;
+  border-left: 40px solid transparent;
+  border-right: 60px solid transparent;
+}
+.customInput:focus {
+  outline: 2px solid #9ca3af;
+}
+.customInput::placeholder {
+  font-size: 14px;
+}
+.customPrimaryButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 13px;
+  background-color: #1d4ed8;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.customSecondaryButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 13px;
+  background-color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 1px solid #d6d3d1;
+}
+
+.ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  max-height: 3em;
+}
+
+@media (max-width: 640px) {
+  .contentWidth {
+    width: 100%;
+    margin: 0;
+  }
+}
